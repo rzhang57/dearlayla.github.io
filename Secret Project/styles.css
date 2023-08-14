@@ -5,12 +5,12 @@ body {
 
 #title {
     color: #fffffe;
-    font-size: 56px;
+    font-size: 52px;
     font-family: "Fredoka";
     font-weight: 900;
     margin-top: 400px;
     position: relative;
-    transition: margin-top 0.75s ease-in-out;
+    transition: margin-top 0.75s ease-in-out, margin-left 0.75s ease-in-out;
 }
 
 #text-container {
@@ -28,20 +28,23 @@ body {
     font-family: "Fredoka";
     font-size: 25px;
     border-right: 3px solid black;
+    line-height: 2;
+    
 }
 
 #start-button {
     font-family: "Fredoka";
     border-radius: 100px;
-    padding: 40px;
+    padding: 65px;
+    padding-bottom: 150px;
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
     background-color: #ffc0ad;
     color: #271c19;
     border: none;
-    margin-top: 0;
-    opacity: 100;
+    margin-top: 140px;
+    opacity: 0%;
     transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out, color 0.25s ease-in-out, margin-top 0.75s ease-out;
 }
 
@@ -74,16 +77,27 @@ body {
     text-align: center;
   }
 
-  nav {
-    background-color: #3498db;
-    padding: 10px 0;
-    text-align: center;
+#nav {
+    margin-top: 350px;
+    margin-left: 0;
+    opacity: 0;
+    transition: margin-top 0.75s ease-in-out, margin-left 0.75s ease-in-out, opacity 3s ease-in-out, gap 0.75s ease-in-out;
+    
 }
 
-nav ul {
+#nav.hidden {
+    opacity: 0;
+}
+
+
+
+#links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 100px
+
 }
 
 nav li {
@@ -91,9 +105,31 @@ nav li {
     margin: 0 10px;
 }
 
-nav a {
+#link {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 36px;
+    font-family: "Fredoka";
+    transition: color 0.2s ease-in-out;
+}
+
+#link:hover {
+    color: #b59dff;
+}
+
+#chanseyidle {
+    margin-top: 150px;
+}
+
+#chanseyidle.hidden {
+    opacity: 0;
+}
+
+
+#chanseyrun {
+    margin-top: 150px;
+    opacity: 0;
+    margin-left: 0;
+    transition: margin-left 1s ease;
 }

@@ -1,6 +1,9 @@
 body { 
     background-color: #55423d;
-    overflow: auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
 #title {
@@ -96,7 +99,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 100px
+    gap: 50px
 
 }
 

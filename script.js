@@ -19,7 +19,7 @@ function revealText() {
     if (charIndex < textToAnimate.length) {
         textElement.textContent += textToAnimate.charAt(charIndex);
         charIndex++;
-        setTimeout(revealText, 13); 
+        setTimeout(revealText, 0); 
         
     }
 
@@ -35,13 +35,13 @@ startButton.addEventListener("click", () => {
     
     startButton.style.marginTop = "1920px"
     title.style.marginTop = "100px";
-    title.style.marginLeft = "-350px"
+    title.style.marginLeft = "-175px";
     nav.style.marginTop = "50px";
-    nav.style.marginLeft = "1000px"
+    nav.style.marginLeft = "750px"
     nav.style.opacity = "1";
     chanseyidle.classList.add("hidden");
     chanseyrun.style.opacity = "1";
-    chanseyrun.style.marginTop = "5000px";
+    chanseyrun.style.marginTop = "6200px";
 
 
     setTimeout(() => {

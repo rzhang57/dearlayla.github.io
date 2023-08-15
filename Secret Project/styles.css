@@ -1,6 +1,6 @@
 body { 
     background-color: #55423d;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #title {
@@ -131,5 +131,23 @@ nav li {
     margin-top: 150px;
     opacity: 0;
     margin-left: 0;
-    transition: margin-left 1s ease;
+    transition: margin-left 1s ease, margin-top 7s ease;
+}
+
+.flashing-word {
+    animation: flash 1s infinite;
+}
+
+
+@keyframes flash {
+    0%, 100% {
+        color: gold /* Flashing color 1 */
+    }
+    50% {
+        color: #b59dff; /* Flashing color 2 */
+    }
+}
+
+#fireworks {
+    opacity: 0;
 }

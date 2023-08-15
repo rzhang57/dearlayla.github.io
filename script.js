@@ -19,7 +19,7 @@ function revealText() {
     if (charIndex < textToAnimate.length) {
         textElement.textContent += textToAnimate.charAt(charIndex);
         charIndex++;
-        setTimeout(revealText, 0); 
+        setTimeout(revealText, 14); 
         
     }
 
